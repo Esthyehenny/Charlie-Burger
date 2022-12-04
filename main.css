@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+        /*** for all links ***/
+
+a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+        /*** header ***/
+
+header {
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.logo a {
+    letter-spacing: 0;
+    word-spacing: 1px;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+        /*** for subscription ***/
+
+.sub-text {
+    position: relative;
+    left: 42%;
+    width: 20%;
+    margin-top: -40px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.sub-text ion-icon {
+    margin-top: 12px;
+    margin-left: 35px;
+}
+
+.sub-text a {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    transition: .5s;
+}
+
+.sub-text a:hover {
+    border: 1px solid #FF0000 ;
+    color: #FF0000 ;
+}
+
+        /*** navbar ***/
+
+nav {
+    position: absolute;
+    left: 75%;
+    width: 20%;
+    margin-top: -35px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+nav a{
+    margin-left: 20px;
+    transition: .5s;
+}
+
+nav ion-icon {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #FF0000 ;
+    padding: 5px;
+    color: #FF0000 ;
+}
+
+nav a:active {
+    color: #00FFFF;
+    border-bottom: 1px solid #00FFFF;
+}
+
+        /*** horizontal line ***/
+
+hr {
+    margin-top: 40px;
+    color: #fff;
+}
+
+    /*** text that comes right after header ***/
+
+.text {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.text span {
+    color: #00FFFF;
+    font-style: italic;
+    font-size: 25px;
+}
+
+/*** Colours 
+    #141414 for bg, #00FFFF for form
+    #FFCCCB backup for hover/CTA, #fff for font
+***/
+
+
+    /*** images ***/
+
+.container { 
+    width: 95%;
+    margin: 20px;
+    margin-top: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img1 img1 img2"
+      "img3 img4 img4"
+      "img5 img5 img6"
+      "img7 img7 img7"
+      "img8 img9 img10"
+      "img11 img11 img11";
+  }
+  
+img {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.img1, .img3, .img5 {
+    margin-left: 20px;
+}
+
+.img2, .img4, .img6 {
+    margin-left: 15px;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.container p {
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+}
+
+.img1 p, .img3 p, .img5 p {
+    width: 98%;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img2 p {
+    width: 97%;
+    text-align: right;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.img3 {
+    grid-area: img3;
+    margin-top: 50px;
+}
+
+.img4 p, .img6 p {
+    width: 97%;
+    text-align: right;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+    margin-top: 23%;
+}
+
+.img6 {
+    grid-area: img6;
+    margin-top: 26%;
+}
+
+.img7 {
+    grid-area: img7;
+    margin-left: 20px;
+    margin-top: 13%;
+}
+
+.img7 p {
+    width: 99%;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.img8, .img9, .img10 {
+    margin-top: 40%;
+}
+
+.img8 p, .img10 p {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.img9 p {
+    margin-top: 10px;
+    margin-bottom: 32px;
+    margin-left: 20px;
+}
+
+.img8 {
+    grid-area: img8;
+    margin-left: 20px;
+}
+
+.img9 {
+    grid-area: img9;
+}
+
+.img10 {
+    grid-area: img10;
+}
+
+.img11 {
+    grid-area: img11;
+    margin-top: 10%;
+    margin-left: 20px;
+}
+  
+.img11 p {
+    width: 99%;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+
+    /*** social media ***/
+
+.social {
+    position: absolute;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    top: 800%;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}   
+
+.links {
+    margin-left: -100px;
+    margin-top: 2px;
+}
+
+.links a {
+    margin-left: 10px;
+    color: #00FFFF;
+}
+input {
+    width: 50%;
+    padding: 10px;
+    margin-top: -10px;
+    border: 1px solid #00FFFF;
+    border-radius: 5px;
+    background-color: #00ffff21;
+    color: #00FFFF;
+}
+
+#search {
+    position: relative;
+    color: #00FFFF;
+    margin-top: 0;
+    margin-left: -140px;
+}
+
+    /*** Scroll to top ***/
+
+.scroll {
+    position: absolute;
+    font-size: 28px;
+    top: 830%;
+    right: 0;
+    color: #00FFFF;
+    margin-bottom: 50px;
+}
+
+.scroll a {
+    margin-left: -100px;
+    color: #00FFFF;
+}
+
+
+    /*** footer ***/
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    padding: 30px;
+    margin-top: 300%;
+    background-color: rgba(74, 73, 73, 0.184);
+}
+
+footer-links a {
+   color: #00FFFF;
+   font-size: 14px;
+   margin-left: 20px;
+}
+
+
+    /*** About Page ***/
+
+.abt-img {
+    margin-top: 5%;
+}
+
+.img1 p ion-icon {
+    position: absolute;
+    margin-top: 2px;
+    margin-right: 20px;
+}
+
+.img1 p span {
+    margin-left: 20px;
+}
+
+.img1-text p {
+    border-bottom: none;
+    line-height: 23px;
+    text-align: left;
+}
+
+.abt-img3 {
+    margin-top: -50px;
+}
+
+.abt-img4 {
+    margin-top: 50px;
+}
+
+.img2-text p {
+    border-bottom: none;
+    line-height: 23px;
+    text-align: left;
+    margin-top: -20px;
+}
+
+.abt-social {
+    top: 297%;
+}
+
+.abt-scroll {
+    top: 310%;
+}
+
+.abt-footer {
+    margin-top: 80%;
+}
+
+
+    /*** Contact Page ***/
+
+form {
+    display: block;
+    width: 80%;
+    height: 500px;
+    margin-top: 70px;
+}
+
+label {
+    margin-left: 20px;
+}
+
+form input{
+    display: block;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-color: #fff;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.121);
+}
+
+form textarea{
+    width: 83%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color: #fff;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.121);
+}
+
+#form-btn {
+    width: 83%;
+    border-radius: 5px;
+}
+
+#form-btn:hover {
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    background-color: transparent;
+    transition: .5s;
+}
+
+.contact-img3 {
+    margin-top: 110px;
+}
